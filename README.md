@@ -1,0 +1,6 @@
+改项目主要是将flink的result监控整合到zabbix中
+脚本分为两个部分
+YarnUtil.py通过yarn的所有master节点获取到活跃的master节点，通过传入的applicationId获取flink真实页面以及applicationName
+SaveJobMessage.py 从YarnUtil.py获取flink真实页面以及applicationName 然后将本application下所有job状态存入redis
+QueryJobMessage.py 通过yarnName和jobName查询job状态
+Main_.py 通过传入参数的不同 判断此时是save状态还是query状态
