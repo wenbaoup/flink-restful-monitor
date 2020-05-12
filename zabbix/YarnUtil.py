@@ -28,8 +28,8 @@ def getActiveRN(master1,master2):
     return activemaster
 
 def getFlinkUrl(AppId):
-    master1="master4.cloudera.yijiupidev.com:8088"
-    master2="master5.cloudera.yijiupidev.com:8088"
+    master1="XXX:8088"
+    master2="XXX:8088"
     activemaster=getActiveRN(master1,master2)
     print(activemaster)
     response=ur.urlopen("http://"+activemaster+"/ws/v1/cluster/apps/"+AppId)
