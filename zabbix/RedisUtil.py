@@ -56,7 +56,7 @@ class redisSentinelHelper():
 
 def getConnect():
     # redis info
-    sentinel_list = [('197.255.20.213', 26379),('197.255.20.214', 26379),('197.255.20.215', 26379)]
+    sentinel_list = [('XXX', 26379),('XXX', 26379),('XXX', 26379)]
     db = 13
     service_name = 'mymaster'
 
